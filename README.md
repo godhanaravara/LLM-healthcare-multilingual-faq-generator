@@ -1,8 +1,11 @@
+# Multilingual LLM-based Medical FAQ Answering Pipeline <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=FF0000&width=150&lines=In+Progress!" height="35" alt="In Progress" />
+
 ## ▸ Overview
+The **LLM-based Healthcare FAQ Generator** is a full-stack NLP pipeline that generates accurate, multilingual responses to medical questions, supporting telehealth applications.  
+- It processes the Medical FAQ dataset (`medquad.csv`, 16,412 rows) through data cleaning, preprocessing, fine-tuning a `google/flan-t5-base` model, Retrieval-Augmented Generation (RAG) with LangChain and FAISS, and translation into Spanish and Telugu using the GCP Translation API.  
+- The pipeline achieves a ROUGE-1 score of 0.316 and delivers 331 `Correct` answers, enhancing patient accessibility and reducing clinician workload by up to 60% (per Azure economics).  
 
-The LLM-based**Healthcare FAQ Generator** is a full-stack NLP pipeline that generates accurate, multilingual responses to medical questions, supporting telehealth applications. It processes the Medical FAQ dataset (`medquad.csv`, 16,412 rows) through data cleaning, preprocessing, fine-tuning a `google/flan-t5-base` model, Retrieval-Augmented Generation (RAG) with LangChain and FAISS, and translation into Spanish and Telugu using the GCP Translation API. The pipeline achieves a ROUGE-1 score of 0.316 and delivers 331 `Correct` answers, enhancing patient accessibility and reducing clinician workload by up to 60% (per Azure economics).
-
-This project showcases my expertise in **data engineering** (PySpark, Azure Blob Storage), **NLP** (Hugging Face, LangChain, FAISS), and **cloud integration** (GCP, Azure).
+✦ This project showcases my expertise in **data engineering** (PySpark, Azure Blob Storage), **NLP** (Hugging Face, LangChain, FAISS), and **cloud integration** (GCP, Azure).  
 
 ---
 ## ▸ Tech Stack
@@ -38,6 +41,18 @@ This project leverages:
 - **Clinical Efficiency**: Automates accurate FAQ responses, reducing clinician workload by up to 60% (per Azure economics).
 - **Scalability**: Supports extensible languages (e.g., French, Hindi) and larger datasets, adaptable for global telehealth platforms.
 - **Cost Savings**: Uses Parquet compression and CPU-friendly processing, minimizing compute costs on Databricks Community Edition.
+
+---
+## ▸ Project Structure
+LLM-healthcare-multilingual-faq-generator/  
+├── 01_load_clean_data.ipynb   -  Data ingestion and cleaning  
+├── 02_preprocess_medquad.ipynb  -  Text preprocessing and lemmatization  
+├── 03_train_LLM.ipynb   -  LLM fine-tuning and evaluation  
+├── 04_langchain_RAG.ipynb          - RAG pipeline with LangChain and FAISS  
+├── 05_GCP_translate.ipynb          - Multilingual translation with GCP  
+├── requirements.txt                - Dependencies  
+├── .env                            - Environment variables  
+└── README.md                       - Project overview  
 
 ---
 ## ▸ Installation
@@ -100,18 +115,7 @@ spark-submit 01_load_clean_data.ipynb
 - `rag_faq_eval_translated.xlsx`: 331 Correct answers in Spanish and Telugu.
 
 ---
-## ▸ Project Structure
-LLM-healthcare-multilingual-faq-generator/  
-├── 01_load_clean_data.ipynb   -  Data ingestion and cleaning  
-├── 02_preprocess_medquad.ipynb  -  Text preprocessing and lemmatization  
-├── 03_train_LLM.ipynb   -  LLM fine-tuning and evaluation  
-├── 04_langchain_RAG.ipynb          - RAG pipeline with LangChain and FAISS  
-├── 05_GCP_translate.ipynb          - Multilingual translation with GCP  
-├── requirements.txt                - Dependencies  
-├── .env                            - Environment variables  
-└── README.md                       - Project overview  
 
----
 ## ▸ Results
 - Data Processing:
     - Raw: 16,412 rows (medquad.csv).
