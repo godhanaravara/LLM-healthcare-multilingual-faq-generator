@@ -101,7 +101,7 @@ spark-submit 01_load_clean_data.ipynb
 
 ---
 ## ▸ Project Structure
-healthcare-faq-generator/  
+LLM-healthcare-multilingual-faq-generator/  
 ├── 01_load_clean_data.ipynb   -  Data ingestion and cleaning  
 ├── 02_preprocess_medquad.ipynb  -  Text preprocessing and lemmatization  
 ├── 03_train_LLM.ipynb   -  LLM fine-tuning and evaluation  
