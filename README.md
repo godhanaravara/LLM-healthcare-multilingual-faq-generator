@@ -101,15 +101,15 @@ spark-submit 01_load_clean_data.ipynb
 
 ---
 ## ▸ Project Structure
-healthcare-faq-generator/
-├── 01_load_clean_data.ipynb        # Data ingestion and cleaning
-├── 02_preprocess_medquad.ipynb     # Text preprocessing and lemmatization
-├── 03_train_LLM.ipynb              # LLM fine-tuning and evaluation
-├── 04_langchain_RAG.ipynb          # RAG pipeline with LangChain and FAISS
-├── 05_GCP_translate.ipynb          # Multilingual translation with GCP
-├── requirements.txt                # Dependencies
-├── .env                            # Environment variables
-└── README.md                       # Project overview
+healthcare-faq-generator/  
+├── 01_load_clean_data.ipynb   -  Data ingestion and cleaning  
+├── 02_preprocess_medquad.ipynb  -  Text preprocessing and lemmatization  
+├── 03_train_LLM.ipynb   -  LLM fine-tuning and evaluation  
+├── 04_langchain_RAG.ipynb          - RAG pipeline with LangChain and FAISS  
+├── 05_GCP_translate.ipynb          - Multilingual translation with GCP  
+├── requirements.txt                - Dependencies  
+├── .env                            - Environment variables  
+└── README.md                       - Project overview  
 
 ---
 ## ▸ Results
