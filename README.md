@@ -55,6 +55,27 @@ LLM-healthcare-multilingual-faq-generator/
 └── README.md                       - Project overview  
 
 ---
+## ▸ Data Source and Licensing
+
+This project uses data derived from:
+
+- **Healthcare NLP: LLMs, Transformers, Datasets** (Kaggle) by **John Miller**  
+  **Source:** https://www.kaggle.com/datasets/jpmiller/layoutlm  
+  **License:** Creative Commons **CC BY-SA 4.0**  
+  **Changes in this project:** cleaned and normalized text, lemmatized questions, converted to Parquet, built a LangChain RAG pipeline using FAISS for retrieval (all-MiniLM-L6-v2 embeddings), generated answers, evaluated with TF-IDF and ROUGE, and translated the Correct subset to Spanish and Telugu.
+
+- **MedQuAD: Medical Question Answering Dataset** by **Asma Ben Abacha and Dina Demner-Fushman**  
+  **Source:** https://github.com/abachaa/MedQuAD  
+  **License:** Creative Commons **CC BY 4.0**
+
+**Redistributed data files in this repo**
+- `data/medquad.csv` — redistributed under **CC BY-SA 4.0**  
+- `data/rag_faq_eval_translated.xlsx` — **adapted data**, released under **CC BY-SA 4.0**
+
+**Attribution:** Title, Author, Source, and License are listed above. Modifications are indicated.  
+**ShareAlike:** adapted data is released under CC BY-SA 4.0. See `LICENSE-data.txt` for details.
+
+---
 ## ▸ Installation
 
 ### Prerequisites
@@ -146,12 +167,14 @@ spark-submit 01_load_clean_data.ipynb
 
 ---
 ## ▸ Contributing
-Contributions are welcome! Please:
-1. Fork the repository.
-2. Create a feature branch (git checkout -b feature/xyz).
-3. Commit changes (git commit -m 'Add feature xyz').
-4. Push to the branch (git push origin feature/xyz).
-5. Open a pull request.
+Issues and pull requests are welcome!  
+
+By submitting a pull request, you confirm that:
+- You wrote the code or have the right to contribute it.
+- You grant the repository owner a perpetual, worldwide, non-exclusive, royalty-free license to use, modify, and distribute your contribution as part of this project.
+- You understand that, since there is no explicit code license, third-party reuse of the project’s code outside this repository is not permitted.
+
+Please open an issue first for major changes and keep PRs focused. Do not commit third-party data unless it complies with the “Data Source and Licensing” section.
 
 ---
 ## ▸ About Me
