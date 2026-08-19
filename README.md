@@ -178,4 +178,4 @@ Please open an issue first for major changes and keep PRs focused. Do not commit
 
 ---
 ## ▸ About Me
-I am a data enthusiast passionate about using AI to understand human trends. This project reflects my journey in blending technology with real-world impact. Connect with me on [LinkedIn](https://www.linkedin.com/in/yourprofile) or explore more at my [GitHub](https://github.com/godhanaravara)!
+I am a data enthusiast passionate about using AI to understand human trends. This project reflects my journey in blending technology with real-world impact. Connect with me on [LinkedIn]([www.linkedin.com/in/godhanaravara](https://www.linkedin.com/in/godhanaravara/)) or explore more at my [GitHub](https://github.com/godhanaravara)!
